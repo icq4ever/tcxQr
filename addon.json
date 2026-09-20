@@ -1,0 +1,12 @@
+{
+  "description": "QR code generator (byte mode, ECC level M)",
+  "author": "icq4ever",
+  "license": "MIT",
+  "category": "utils",
+  "keywords": [
+    "qr",
+    "qrcode",
+    "barcode",
+    "encode"
+  ]
+}

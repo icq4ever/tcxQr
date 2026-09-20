@@ -1,0 +1,8 @@
+# Ignore build artifacts
+bin/
+build/
+build-*/
+CMakePresets.json
+*.dSYM/
+.vscode/
+.DS_Store
