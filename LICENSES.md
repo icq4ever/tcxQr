@@ -28,7 +28,8 @@ SOFTWARE.
 
 ## QR Code generator library (qrcodegen)
 
-Bundled unchanged in `src/qrcodegen.hpp` and `src/qrcodegen.cpp`.
+Bundled unchanged in `libs/qrcodegen/src/qrcodegen.hpp` and
+`libs/qrcodegen/src/qrcodegen.cpp`.
 
 - Author: Project Nayuki
 - Homepage: https://www.nayuki.io/page/qr-code-generator-library

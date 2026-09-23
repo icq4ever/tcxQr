@@ -7,8 +7,8 @@
 // Addon for TrussC. Add "tcxQr" to addons.make to use.
 //
 // Thin wrapper over Nayuki's qrcodegen (MIT), vendored unchanged in
-// qrcodegen.hpp / qrcodegen.cpp. Keeping the upstream files untouched means a
-// newer version can be dropped in without re-applying edits.
+// libs/qrcodegen/src/. Keeping the upstream files untouched means a newer
+// version can be dropped in without re-applying edits.
 //
 // Usage example:
 //   tcx::qr::Code code("https://example.com/breath");
@@ -21,7 +21,7 @@
 //   }
 //
 // Leave a quiet zone of 4 modules around the symbol or scanners may fail —
-// drawQuiet() below returns the pixel offset that accounts for it.
+// cellFor() below sizes a module so the symbol plus its quiet zone fits a box.
 //
 // Error correction defaults to Medium (~15% recoverable). Use High when the
 // code is printed small, shown on a screen people photograph at an angle, or

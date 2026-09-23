@@ -5,7 +5,7 @@
 #pragma once
 
 #include <TrussC.h>
-#include "tcQr.h"
+#include "tcxQr.h"
 
 #include <cstdio>
 #include <memory>

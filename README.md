@@ -9,8 +9,9 @@ pleasant to use from a TrussC sketch — it swallows the exceptions, exposes the
 module grid as a simple `module(x, y)` lookup, and does the arithmetic for sizing
 a symbol to fit a box on screen.
 
-`qrcodegen.hpp` / `qrcodegen.cpp` are vendored **unchanged** in `src/`, so a newer
-upstream release can be dropped in without re-applying local edits.
+`qrcodegen.hpp` / `qrcodegen.cpp` are vendored **unchanged** in
+`libs/qrcodegen/src/`, so a newer upstream release can be dropped in without
+re-applying local edits.
 
 ## Features
 
@@ -34,13 +35,13 @@ tcxQr
 ```
 
 …then `trusscli update`. No external dependencies and no build config to write —
-the one `.cpp` is collected from `src/` automatically.
+TrussC collects `src/` and `libs/*/src/` automatically.
 
 ## Quick start
 
 ```cpp
 #include <TrussC.h>
-#include "tcQr.h"
+#include "tcxQr.h"
 
 using namespace tc;
 
